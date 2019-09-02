@@ -1,16 +1,17 @@
+
 state={
 	id=735
 	name="STATE_735"
+
+	history={
+		owner = CHY
+		add_core_of = CHY
+
+	}
+
 	provinces={
-		243 363 593 697 1029 1315 1853 1875 2497 3834 4442 6922 6946 6975 7007 
+		243 363 697 1029 1315 1875 2497 3834 6922 6946 6975 7007 
 	}
 	manpower=2450000
 	buildings_max_level_factor=1.000
-
-	history={
-
-		owner = CHY
-
-		add_core_of = CHY
-        }
 }

@@ -1,8 +1,9 @@
+
 state={
 	id=696
 	name="STATE_696"
 	provinces={
-		69 502 1224 1311 2009 2282 3496 3698 4290 6772 6793 6895 6898 6918 
+		69 502 1224 1311 2009 3698 6895 6898 6918 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000

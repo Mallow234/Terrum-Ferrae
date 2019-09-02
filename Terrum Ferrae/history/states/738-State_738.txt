@@ -1,16 +1,17 @@
+
 state={
 	id=738
 	name="STATE_738"
+
+	history={
+		owner = JAB
+		add_core_of = JAB
+
+	}
+
 	provinces={
-		268 716 872 1428 1748 2416 2452 2886 2917 3072 3249 4342 6972 7008 7012 
+		716 1428 1748 2452 2917 3072 4342 6972 7008 7012 
 	}
 	manpower=10
 	buildings_max_level_factor=1.000
-
-	history={
-
-		owner = JAB
-
-		add_core_of = JAB
-        }
 }

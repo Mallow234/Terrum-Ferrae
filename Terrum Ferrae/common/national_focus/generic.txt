@@ -1,0 +1,242 @@
+focus_tree = { 
+        id = generic_focus
+        
+        country = { 
+               factor = 1 
+        }
+ 
+        default = yes
+        reset_on_civilwar = no
+
+#Focus for Power
+focus = { 
+id = Generic_power
+icon = GFX_focus_ger_assassinate_mussolini
+x = 13
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_unlawfulexpression } 
+mutually_exclusive = { focus = Generic_people } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for People
+focus = { 
+id = Generic_people
+icon = GFX_focus_YUG_pan_slavic_congress
+x = 16
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_unlawfulexpression } 
+mutually_exclusive = { focus = Generic_power } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Unlawful Expression
+focus = { 
+id = Generic_unlawfulexpression
+icon = GFX_focus_generic_treaty
+x = 15
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_revolution } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Republic
+focus = { 
+id = Generic_republic
+icon = GFX_goal_support_democracy
+x = 8
+y = 1
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = Generic_regent } 
+mutually_exclusive = { focus = Generic_revolution } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Write the Constitution
+focus = { 
+id = Generic_writetheconstitution
+icon = GFX_focus_generic_treaty
+x = 8
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_freedomofspeech } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Hold Elections
+focus = { 
+id = Generic_holdelections
+icon = GFX_focus_generic_support_the_left_right
+x = 8
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_writetheconstitution } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Professional Officer Corps
+focus = { 
+id = Generic_professionalofficercorps
+icon = GFX_focus_mex_support_general_cedillo
+x = 20
+y = 1
+cost = 10
+available_if_capitulated = yes 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Freedom of Speech
+focus = { 
+id = Generic_freedomofspeech
+icon = GFX_focus_hol_the_foundations_of_defense
+x = 8
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_republic } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Aristocracy
+focus = { 
+id = Generic_aristocracy
+icon = GFX_focus_rom_royal_dictatorship
+x = 1
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_thedivineright } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for The Divine Right
+focus = { 
+id = Generic_thedivineright
+icon = GFX_focus_smiling_buddha
+x = 1
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_regent } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Regent
+focus = { 
+id = Generic_regent
+icon = GFX_focus_generic_home_defense
+x = 1
+y = 1
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = Generic_republic } 
+mutually_exclusive = { focus = Generic_revolution } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Revolution
+focus = { 
+id = Generic_revolution
+icon = GFX_goal_generic_demand_territory
+x = 15
+y = 1
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = Generic_republic } 
+mutually_exclusive = { focus = Generic_regent } 
+mutually_exclusive = { focus = Generic_ } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Subordinate Judiciary
+focus = { 
+id = Generic_subordinatejudiciary
+icon = GFX_goal_continuous_boost_freedom
+x = 1
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_aristocracy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Citizen Militias
+focus = { 
+id = Generic_citizenmilitias
+icon = GFX_goal_generic_small_arms
+x = 16
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_people } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Free Corps
+focus = { 
+id = Generic_freecorps
+icon = GFX_goal_generic_axis_build_infantry
+x = 13
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_power } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#End of focuses 
+ }
