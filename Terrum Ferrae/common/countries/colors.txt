@@ -1,0 +1,24 @@
+TST = {
+	color = rgb { 57 113 228 }
+	color_ui = rgb { 74 147 255 }
+}
+
+TSO = {
+        color = rgb { 200 100 50 }
+        color_ui = rgb { 74 147 255 }
+}
+
+CAA = {
+        color = rgb { 195 96 57 }
+        color_ui = rgb { 218 85 33 }
+}
+
+JAB = {
+        color = rgb { 143 152 63 }
+        color_ui = rgb { 155 168 47 }
+}
+
+CHY = {
+        color = rgb { 181 174 62 }
+        color_ui = rgb { 204 195 50 }
+}

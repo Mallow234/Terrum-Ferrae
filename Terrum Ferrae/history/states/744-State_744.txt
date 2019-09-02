@@ -1,0 +1,16 @@
+state={
+	id=744
+	name="STATE_744"
+	provinces={
+		314 1752 1897 2056 3384 3630 7010 
+	}
+	manpower=60067
+	buildings_max_level_factor=1.000
+
+	history={
+
+		owner = JAB
+
+		add_core_of = JAB
+        }
+}

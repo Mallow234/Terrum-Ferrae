@@ -1,0 +1,27 @@
+bookmarks = {
+	bookmark = {
+		name = "NEW_WORLD_NAME"
+		desc = "NEW_WORLD_DESC"
+		date = 1934.1.1.12
+		picture = "GFX_select_date_1936"
+		default_country = "TSO"
+		default = yes
+		"TSO"={
+			history = "TSO_TF_DESC"
+			ideology = communism
+			ideas = {
+				#
+			}
+			focuses = {
+				#
+			}
+		}
+		"---"={
+			history = "OTHER_NEW_WORLD_DESC"
+		}
+		effect = {
+			randomize_weather = 22345 # <- Obligatory in every bookmark !
+			#123 = { rain_light = yes }
+		}
+	}
+}

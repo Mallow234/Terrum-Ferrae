@@ -1,0 +1,16 @@
+state={
+	id=638
+	name="STATE_638"
+	provinces={
+		401 538 1451 1616 1733 2973 
+	}
+	manpower=512000
+	buildings_max_level_factor=1.000
+
+	history={
+
+		owner = CAA
+
+		add_core_of = CAA
+        }
+}

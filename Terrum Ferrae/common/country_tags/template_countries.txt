@@ -1,0 +1,5 @@
+TST = "countries/Test.txt"
+TSO = "countries/test_state_one.txt"
+CAA = "countries/Camereria.txt"
+JAB = "countries/Jayyab.txt"
+CHY = "countries/Chaya.txt"

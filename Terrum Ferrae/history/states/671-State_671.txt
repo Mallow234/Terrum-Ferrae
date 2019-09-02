@@ -1,0 +1,16 @@
+state={
+	id=671
+	name="STATE_671"
+	provinces={
+		29 132 333 935 1535 1898 2055 3080 3119 3977 6718 6801 
+	}
+	manpower=7456000
+	buildings_max_level_factor=1.000
+
+	history={
+
+		owner = CHY
+
+		add_core_of = CHY
+        }
+}

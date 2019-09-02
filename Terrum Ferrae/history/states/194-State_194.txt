@@ -1,0 +1,16 @@
+state={
+	id=194
+	name="STATE_194"
+	provinces={
+		259 468 4318 
+	}
+	manpower= 50000
+	buildings_max_level_factor=1.000
+
+	history={
+
+		owner = CAA
+
+		add_core_of = CAA
+        }
+}

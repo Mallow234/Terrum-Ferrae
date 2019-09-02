@@ -1,0 +1,27 @@
+﻿
+add_namespace = meteor
+
+country_event = {
+	id = meteor.1
+	title = meteor.1.t
+	desc = meteor.1.d
+	picture = GFX_report_event_meteorite_sighted
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = meteor.1.a
+		add_stability = -0.10
+		add_war_support = -0.05
+	}
+	option = {
+		name = meteor.1.b
+		add_stability = -0.10
+		add_war_support = -0.05
+	}
+	option = {
+		name = meteor.1.c
+		add_stability = -0.10
+		add_war_support = -0.05
+	}
+}
