@@ -5,6 +5,12 @@ state={
 	provinces={
 		33 983 1584 
 	}
-	manpower=0
+	manpower=100000
 	buildings_max_level_factor=1.000
+
+	history=
+	{
+		owner = BYR
+		add_core_of = BYR
+	}
 }

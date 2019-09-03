@@ -2,9 +2,16 @@
 state={
 	id=13
 	name="STATE_13"
-	provinces={
-		869 4510 7517 7518 7519 7520 7524 
+
+	history={
+		owner = NEO
+		add_core_of = NEO
+
 	}
-	manpower=0
+
+	provinces={
+		869 4510 7517 7518 7519 7520 7522 7524 
+	}
+	manpower=450
 	buildings_max_level_factor=1.000
 }

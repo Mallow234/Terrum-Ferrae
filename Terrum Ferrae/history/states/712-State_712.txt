@@ -4,6 +4,12 @@ state={
 	provinces={
 		71 409 605 985 1732 2163 2744 3188 4399 4464 6870 6903 6943 
 	}
-	manpower=0
+	manpower=450
 	buildings_max_level_factor=1.000
+
+	history=
+	{
+		owner = BYR
+		add_core_of = BYR
+	}
 }

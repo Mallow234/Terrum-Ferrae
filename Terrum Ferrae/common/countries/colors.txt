@@ -22,3 +22,28 @@ CHY = {
         color = rgb { 181 174 62 }
         color_ui = rgb { 204 195 50 }
 }
+
+ALK = {
+        color = rgb { 171 112 112 }
+        color_ui = rgb { 229 210 210 }
+}
+
+BYR = {
+        color = rgb { 67 138 59 }
+        color_ui = rgb { 66 197 51 }
+}
+
+NEO = {
+        color = rgb { 74 140 168 }
+        color_ui = rgb { 130 198 227 }
+}
+
+RAO = {
+        color = rgb { 160 61 61 }
+        color_ui = rgb { 239 58 58 }
+}
+
+VAL = {
+        color = rgb { 69 115 142 }
+        color_ui = rgb { 168 197 214 }
+}

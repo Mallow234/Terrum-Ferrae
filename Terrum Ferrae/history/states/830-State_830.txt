@@ -5,6 +5,12 @@ state={
 	provinces={
 		844 1377 1737 2570 3626 3856 7363 7371 7381 7394 
 	}
-	manpower=0
+	manpower=567000
 	buildings_max_level_factor=1.000
+
+	history=
+	{
+		owner = VAL
+		add_core_of = VAL
+	}
 }

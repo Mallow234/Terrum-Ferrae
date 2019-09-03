@@ -5,6 +5,12 @@ state={
 	provinces={
 		564 691 1634 3033 3794 4535 4550 
 	}
-	manpower=0
+	manpower=67
 	buildings_max_level_factor=1.000
+
+	history=
+	{
+		owner = NEO
+		add_core_of = NEO
+	}
 }

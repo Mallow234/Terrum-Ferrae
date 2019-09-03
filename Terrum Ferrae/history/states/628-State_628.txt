@@ -5,6 +5,12 @@ state={
 	provinces={
 		1642 1658 1969 3226 3348 3620 3968 6624 
 	}
-	manpower=0
+	manpower=10000
 	buildings_max_level_factor=1.000
+
+	history=
+	{
+		owner = RAO
+		add_core_of = RAO
+	}
 }
