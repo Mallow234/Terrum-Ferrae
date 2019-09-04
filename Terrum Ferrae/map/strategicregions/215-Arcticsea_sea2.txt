@@ -1,9 +1,0 @@
-strategic_region={
-	id=215
-	name="STRATEGICREGION_215"
-	provinces={
-		7725 7814 7901 8053 8118 8146 8209 8217 8569 8592 8610 8705 8739 9096 9407 9420 9498 9518 9525 
-	}
-	weather={
-	}
-}

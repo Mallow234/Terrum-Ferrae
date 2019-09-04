@@ -1,8 +1,9 @@
+
 state={
 	id=170
 	name="STATE_170"
 	provinces={
-		6054 6058 
+		6053 6054 6058 6082 
 	}
 	manpower=0
 	buildings_max_level_factor=1.000
