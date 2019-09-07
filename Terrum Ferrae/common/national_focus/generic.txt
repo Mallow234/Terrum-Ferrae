@@ -7,158 +7,14 @@ focus_tree = {
  
         default = yes
         reset_on_civilwar = no
-
-#Focus for Power
-focus = { 
-id = Generic_power
-icon = GFX_focus_ger_assassinate_mussolini
-x = 13
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = Generic_unlawfulexpression } 
-mutually_exclusive = { focus = Generic_people } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for People
-focus = { 
-id = Generic_people
-icon = GFX_focus_YUG_pan_slavic_congress
-x = 16
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = Generic_unlawfulexpression } 
-mutually_exclusive = { focus = Generic_power } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Unlawful Expression
-focus = { 
-id = Generic_unlawfulexpression
-icon = GFX_focus_generic_treaty
-x = 15
-y = 2
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = Generic_revolution } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Republic
-focus = { 
-id = Generic_republic
-icon = GFX_goal_support_democracy
-x = 8
-y = 1
-cost = 10
-available_if_capitulated = yes 
-mutually_exclusive = { focus = Generic_regent } 
-mutually_exclusive = { focus = Generic_revolution } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Write the Constitution
-focus = { 
-id = Generic_writetheconstitution
-icon = GFX_focus_generic_treaty
-x = 8
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = Generic_freedomofspeech } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Hold Elections
-focus = { 
-id = Generic_holdelections
-icon = GFX_focus_generic_support_the_left_right
-x = 8
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = Generic_writetheconstitution } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Professional Officer Corps
-focus = { 
-id = Generic_professionalofficercorps
-icon = GFX_focus_mex_support_general_cedillo
-x = 20
-y = 1
-cost = 10
-available_if_capitulated = yes 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Freedom of Speech
-focus = { 
-id = Generic_freedomofspeech
-icon = GFX_focus_hol_the_foundations_of_defense
-x = 8
-y = 2
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = Generic_republic } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for Aristocracy
-focus = { 
-id = Generic_aristocracy
-icon = GFX_focus_rom_royal_dictatorship
-x = 1
-y = 3
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = Generic_thedivineright } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
-
-#Focus for The Divine Right
-focus = { 
-id = Generic_thedivineright
-icon = GFX_focus_smiling_buddha
-x = 1
-y = 2
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = Generic_regent } 
-ai_will_do = { 
- factor = 1
- } 
-
- } 
+		
+		
+		continuous_focus_position = { x = 50 y = 1000 }
+		
+		
+##############
+#Royalty Branch
+##############
 
 #Focus for Regent
 focus = { 
@@ -175,12 +31,558 @@ ai_will_do = {
  } 
 
  } 
+ 
+#Focus for Reinforce Royal Position
+focus = { 
+        id = Generic_reinforceroyalposition
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 1
+        y = 2
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { focus = Generic_regent }  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for The Divine Right
+focus = { 
+id = Generic_thedivineright
+icon = GFX_focus_smiling_buddha
+x = 1
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_reinforceroyalposition } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Aristocracy
+focus = { 
+id = Generic_aristocracy
+icon = GFX_focus_rom_royal_dictatorship
+x = 1
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_thedivineright } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ #Focus for Subordinate Judiciary
+focus = { 
+id = Generic_subordinatejudiciary
+icon = GFX_goal_continuous_boost_freedom
+x = 1
+y = 5
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_aristocracy } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+
+#Focus for Absolute Primogeniture
+focus = { 
+        id = Generic_absoluteprimogeniture
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 0
+        y = 6
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { focus = Generic_subordinatejudiciary }  
+		mutually_exclusive = { focus = Generic_electiveprimogeniture } 
+        ai_will_do = { 
+            factor = 1
+        } 
+}  
+
+#Focus for Elective Primogeniture
+focus = { 
+        id = Generic_electiveprimogeniture
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 2
+        y = 6
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { focus = Generic_subordinatejudiciary }  
+		mutually_exclusive = { focus = Generic_absoluteprimogeniture } 
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Royal Court
+focus = { 
+        id = Generic_royalcourt
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 1
+        y = 7
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_absoluteprimogeniture
+            focus = Generic_electiveprimogeniture
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Royal Bureacracy
+focus = { 
+        id = Generic_royalbureacracy
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 1
+        y = 8
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_royalcourt
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+##Economics branch
+
+#Focus for Formalise the Guilds
+focus = { 
+        id = Generic_FormaliseTheGuilds
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = -4
+        y = 9
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_royalbureacracy
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Robber Barons
+focus = { 
+        id = Generic_RobberBarons
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = -5
+        y = 10
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_FormaliseTheGuilds
+		}  
+		mutually_exclusive = { focus = Generic_RoyalLicenses } 
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Royal Licenses
+focus = { 
+        id = Generic_RoyalLicenses
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = -3
+        y = 10
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_FormaliseTheGuilds
+		}  
+		mutually_exclusive = { focus = Generic_RobberBarons } 
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Ignore the Companies
+focus = { 
+        id = Generic_IgnoreCompanies
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = -5
+        y = 11
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_RobberBarons
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Hands-off Industry
+focus = { 
+        id = Generic_HandsOffIndustry
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = -3
+        y = 11
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_RoyalLicenses
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Royal Society
+focus = { 
+        id = Generic_RoyalSociety
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = -4
+        y = 12
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_HandsOffIndustry
+			focus = Generic_IgnoreCompanies
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+##Military Branch
+
+
+#Focus for Aristocratic Officers
+focus = { 
+        id = Generic_AristocraticOfficers
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 1
+        y = 10
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_royalbureacracy
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Warrior-King
+focus = { 
+        id = Generic_WarriorKing
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 0
+        y = 11
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_AristocraticOfficers
+		}  
+		mutually_exclusive = { focus = Generic_CommanderInChief }
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Commander In Chief
+focus = { 
+        id = Generic_CommanderInChief
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 2
+        y = 11
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_AristocraticOfficers
+		}  
+		mutually_exclusive = { focus = Generic_WarriorKing }
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Professional Levies
+focus = { 
+        id = Generic_ProfessionalLevies
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = -1
+        y = 12
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_WarriorKing
+			focus = Generic_CommanderInChief
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Men-At-Arms
+focus = { 
+        id = Generic_MenAtArms
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = -1
+        y = 13
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_ProfessionalLevies
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Noble Captainry
+focus = { 
+        id = Generic_NobleCaptainry
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 3
+        y = 12
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_WarriorKing
+			focus = Generic_CommanderInChief
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for PrivateersLicenses
+focus = { 
+        id = Generic_PrivateersLicenses
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 3
+        y = 13
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_NobleCaptainry
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+##extended politics branch
+
+#Focus for Controlled Press
+focus = { 
+        id = Generic_ControlledPress
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 6
+        y = 9
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_royalbureacracy
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Limited Civilian Government
+focus = { 
+        id = Generic_LimitedCivilianGovernment
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 6
+        y = 10
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_ControlledPress
+		}  
+		mutually_exclusive = { focus = Generic_AbsolutePower } 
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Absolute Power
+focus = { 
+        id = Generic_AbsolutePower
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 8
+        y = 10
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_ControlledPress
+		}  
+		mutually_exclusive = { focus = Generic_LimitedCivilianGovernment } 
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for A King for the People
+focus = { 
+        id = Generic_AKingForThePeople
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 6
+        y = 11
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_LimitedCivilianGovernment
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for Iron Hand in a Velvet Glove
+focus = { 
+        id = Generic_IronHandVelvetGlove
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 8
+        y = 11
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { 
+		    focus = Generic_AbsolutePower
+		}  
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+###########
+#Democracy Branch
+###########
+
+
+#Focus for Republic
+focus = { 
+id = Generic_republic
+icon = GFX_goal_support_democracy
+x = 15
+y = 1
+cost = 10
+available_if_capitulated = yes 
+mutually_exclusive = { focus = Generic_regent } 
+mutually_exclusive = { focus = Generic_revolution } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ #Focus for Freedom of Speech
+focus = { 
+id = Generic_freedomofspeech
+icon = GFX_focus_hol_the_foundations_of_defense
+x = 15
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_republic } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ #Focus for Write the Constitution
+focus = { 
+id = Generic_writetheconstitution
+icon = GFX_focus_generic_treaty
+x = 15
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_freedomofspeech } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ }
+ 
+ #Focus for Hold Elections
+focus = { 
+id = Generic_holdelections
+icon = GFX_focus_generic_support_the_left_right
+x = 15
+y = 4
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_writetheconstitution } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ 
+ 
+ 
+ ################
+ #Revolution Branch
+ ################
+
+
+#Focus for Power
+focus = { 
+        id = Generic_power
+        icon = GFX_focus_ger_assassinate_mussolini
+        x = 26
+        y = 3
+        cost = 10
+        available_if_capitulated = yes 
+        prerequisite = { focus = Generic_unlawfulexpression } 
+        mutually_exclusive = { focus = Generic_people } 
+        ai_will_do = { 
+            factor = 1
+        } 
+} 
+
+#Focus for People
+focus = { 
+id = Generic_people
+icon = GFX_focus_YUG_pan_slavic_congress
+x = 34
+y = 3
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_unlawfulexpression } 
+mutually_exclusive = { focus = Generic_power } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+
+#Focus for Unlawful Expression
+focus = { 
+id = Generic_unlawfulexpression
+icon = GFX_focus_generic_treaty
+x = 30
+y = 2
+cost = 10
+available_if_capitulated = yes 
+prerequisite = { focus = Generic_revolution } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
 
 #Focus for Revolution
 focus = { 
 id = Generic_revolution
 icon = GFX_goal_generic_demand_territory
-x = 15
+x = 30
 y = 1
 cost = 10
 available_if_capitulated = yes 
@@ -193,26 +595,13 @@ ai_will_do = {
 
  } 
 
-#Focus for Subordinate Judiciary
-focus = { 
-id = Generic_subordinatejudiciary
-icon = GFX_goal_continuous_boost_freedom
-x = 1
-y = 4
-cost = 10
-available_if_capitulated = yes 
-prerequisite = { focus = Generic_aristocracy } 
-ai_will_do = { 
- factor = 1
- } 
 
- } 
 
 #Focus for Citizen Militias
 focus = { 
 id = Generic_citizenmilitias
 icon = GFX_goal_generic_small_arms
-x = 16
+x = 34
 y = 4
 cost = 10
 available_if_capitulated = yes 
@@ -227,11 +616,30 @@ ai_will_do = {
 focus = { 
 id = Generic_freecorps
 icon = GFX_goal_generic_axis_build_infantry
-x = 13
+x = 26
 y = 4
 cost = 10
 available_if_capitulated = yes 
 prerequisite = { focus = Generic_power } 
+ai_will_do = { 
+ factor = 1
+ } 
+
+ } 
+ 
+ 
+ #######################
+ #Army Focuses
+ #######################
+ 
+ #Focus for Professional Officer Corps
+focus = { 
+id = Generic_professionalofficercorps
+icon = GFX_focus_mex_support_general_cedillo
+x = 40
+y = 1
+cost = 10
+available_if_capitulated = yes 
 ai_will_do = { 
  factor = 1
  } 
