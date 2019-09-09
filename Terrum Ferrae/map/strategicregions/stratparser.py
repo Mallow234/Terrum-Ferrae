@@ -43,8 +43,10 @@ for filename in glob.glob('*.txt'):
 
   thisfile = open(filename)
   foundflag = False
+  linenum = 0
 
   while True:
+    linenum += 1
     line = thisfile.readline()
 
     if foundflag:
