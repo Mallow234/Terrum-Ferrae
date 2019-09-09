@@ -52,7 +52,7 @@ for filename in glob.glob('*.txt'):
     if foundflag:
       for x in conflicts:
         if (' ' + x + ' ') in line:
-          print( 'sed -i s:' + x + '::g' + ' \"' + filename + '\"')
+          print( 'sed -i \"6s: ' + x + ' : :g\"' + ' \"' + filename + '\"')
 
       foundflag = False
     if "provinces={" in line:
